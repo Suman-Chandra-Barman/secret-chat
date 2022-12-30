@@ -121,7 +121,7 @@ const Login = () => {
           <div className="divider">OR</div>
           <button
             onClick={handleGoogleLogin}
-            className="btn btn-outline border-blue-500 hover:bg-blue-500 hover:border-0 w-full"
+            className="btn btn-outline border-blue-500 hover:border-0 w-full"
           >
             CONTINUE WITH GOOGLE
           </button>

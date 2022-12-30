@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -27,13 +28,13 @@ const Navbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link>Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link>Media</Link>
+              <Link to="/media">Media</Link>
             </li>
             <li>
-              <Link>Message</Link>
+              <Link to="/message">Message</Link>
             </li>
             <li>
               <Link to="/register">Register</Link>
@@ -50,13 +51,13 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link>Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link>Media</Link>
+            <Link to="/media">Media</Link>
           </li>
           <li>
-            <Link>Message</Link>
+            <Link to="/message">Message</Link>
           </li>
           <li>
             <Link to="/register">Register</Link>
@@ -69,8 +70,8 @@ const Navbar = () => {
       <div className="navbar-end">
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img src="https://placeimg.com/80/80/people" alt="" />
+            <div className="w-8 rounded-full">
+              <FaUserCircle className="w-8 h-8" />
             </div>
           </label>
           <ul

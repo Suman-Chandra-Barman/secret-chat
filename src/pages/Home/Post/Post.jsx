@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../../contexts/AuthProvider";
 import PostModal from "./PostModal";
+import { FaUserCircle } from "react-icons/fa";
 
 const Post = () => {
+  const { user } = useContext(AuthContext);
+  console.log("user", user);
   return (
-    <div className="flex w-1/2 mx-auto gap-5">
+    <div className="flex w-1/2 mx-auto gap-5 items-center">
       <div className="avatar">
-        <div className="w-12 rounded-full">
-          <img src="https://placeimg.com/192/192/people" />
+        <div className="w-10 rounded-full">
+          <FaUserCircle className="w-10 h-10" />
         </div>
       </div>
       <label

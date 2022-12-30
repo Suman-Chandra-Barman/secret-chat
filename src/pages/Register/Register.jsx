@@ -30,7 +30,7 @@ const Register = () => {
         // user profile update
         updateUserProfile(user, userInfo)
           .then(() => {
-            userStore(data.name, data.email, data.account);
+            // userStore(data.name, data.email);
           })
           .catch((error) => {
             console.log(error);
@@ -42,25 +42,25 @@ const Register = () => {
       });
   };
 
-  const userStore = (name, email, account) => {
-    const user = { name, email, account };
-    console.log("user", user);
-    fetch("https://used-laptop-shop.vercel.app/users", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(user),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.acknowledged) {
-          console.log(data);
-          navigate(from, { replace: true });
-        }
-      })
-      .catch((err) => console.log(err));
-  };
+  // const userStore = (name, email) => {
+  //   const user = { name, email};
+  //   console.log("user", user);
+  //   fetch("https://used-laptop-shop.vercel.app/users", {
+  //     method: "POST",
+  //     headers: {
+  //       "content-type": "application/json",
+  //     },
+  //     body: JSON.stringify(user),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       if (data.acknowledged) {
+  //         console.log(data);
+  //         navigate(from, { replace: true });
+  //       }
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
   return (
     <div className="flex justify-center items-center text-black my-20">
       <div className="w-[450px] rounded-2xl shadow-xl p-7">
