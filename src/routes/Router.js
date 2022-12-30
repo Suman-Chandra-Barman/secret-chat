@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home/Home";
 import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
 import Media from "../pages/Media/Media/Media";
+import Message from "../pages/Message/Message";
 
 export const router = createBrowserRouter([
   {
@@ -23,9 +24,13 @@ export const router = createBrowserRouter([
         element: <Login />,
       },
       {
+        path: "/message",
+        element: <Message />,
+      },
+      {
         path: "/media",
         element: <Media />,
-        loader: () => fetch("http://localhost:5000/post"),
+        loader: () => fetch("https://secret-chat-server.vercel.app/post"),
       },
     ],
   },

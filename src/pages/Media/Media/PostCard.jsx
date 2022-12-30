@@ -4,7 +4,7 @@ import { FaHeart, FaRocketchat, FaUserCircle } from "react-icons/fa";
 const PostCard = ({ post }) => {
   const { _id, name, text, image, email } = post;
   return (
-    <div className="card w-96 bg-base-100 shadow-xl mx-auto rounded">
+    <div className="card w-[80%] bg-base-100 shadow-xl rounded">
       <div className="card-body p-4">
         <div className="flex gap-2 items-center border-b-2 pb-2">
           <div className="avatar">

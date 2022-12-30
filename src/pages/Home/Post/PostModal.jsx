@@ -38,7 +38,7 @@ const PostModal = () => {
           console.log(postData);
 
           // save post in database
-          fetch("http://localhost:5000/post", {
+          fetch("https://secret-chat-server.vercel.app/post", {
             method: "POST",
             headers: {
               "content-type": "application/json",

@@ -62,7 +62,7 @@ const Register = () => {
   //     .catch((err) => console.log(err));
   // };
   return (
-    <div className="flex justify-center items-center text-black my-20">
+    <div className="flex justify-center items-center text-black my-5">
       <div className="w-[450px] rounded-2xl shadow-xl p-7">
         <h3 className="text-2xl text-center">Register Now</h3>
         <form onSubmit={handleSubmit(handleRegister)}>

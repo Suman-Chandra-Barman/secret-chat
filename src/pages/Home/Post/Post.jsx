@@ -7,7 +7,7 @@ const Post = () => {
   const { user } = useContext(AuthContext);
   console.log("user", user);
   return (
-    <div className="flex w-1/2 mx-auto gap-5 items-center">
+    <div className="flex gap-5 items-center w-4/5">
       <div className="avatar">
         <div className="w-10 rounded-full">
           <FaUserCircle className="w-10 h-10" />
